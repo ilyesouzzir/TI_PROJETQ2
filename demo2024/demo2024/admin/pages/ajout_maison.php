@@ -1,7 +1,7 @@
 <h2>Gestion des maisons</h2>
 <link rel="stylesheet" href="./public/css/custom.css">
 <div class="container">
-    <form id="form_ajout" method="get" action="">
+    <form id="form_ajout" method="get" action="" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="titre_maison" class="form-label">Titre Maison</label>
             <input type="text" class="form-control" id="titre_maison" name="titre_maison">

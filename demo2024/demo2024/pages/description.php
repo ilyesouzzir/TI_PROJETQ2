@@ -1,11 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!-- Inclusion de jQuery -->
-    <script src="admin/public/js/fonction_jquery2.js"></script>
-</head>
-<body>
-<p></p> <!-- Paragraphe vide -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!-- Inclusion de jQuery -->
+<script src="admin/public/js/fonction_jquery2.js"></script>
+
+<p></p>
 
 <div class="container-fluid"> <!-- Conteneur fluide pour le contenu -->
     <div class="row"> <!-- Ligne pour aligner les colonnes -->
@@ -22,7 +18,7 @@
             <p>La belle maison en banlieue offre un refuge paisible loin de l'agitation de la ville. Située dans un quartier calme et verdoyant, cette maison spacieuse est parfaite pour une famille cherchant à profiter de l'espace et de la tranquillité. Avec un grand jardin luxuriant, une terrasse ensoleillée et des espaces de vie généreux, cette propriété offre un cadre idéal pour se détendre et se divertir. À proximité des commodités locales et des transports en commun, cette maison allie le confort de la vie en banlieue à la proximité de la vie urbaine.</p>
             <!-- Paragraphe de la description de Belle maison en banlieue -->
 
-           <h2>Description de l'appartement lumineux</h2>
+            <h2>Description de l'appartement lumineux</h2>
             <!-- Titre de la description de l'appartement lumineux -->
             <p>L'appartement lumineux est un espace accueillant et spacieux baigné de lumière naturelle. Ses grandes fenêtres offrent une vue imprenable sur la ville et permettent à la lumière du soleil de pénétrer dans chaque pièce, créant une atmosphère chaleureuse et invitante. Les intérieurs sont décorés avec goût, mettant en valeur les tons clairs qui accentuent la luminosité naturelle de l'espace. Cet appartement est idéal pour ceux qui recherchent un lieu de vie où la lumière et la sérénité se rencontrent.</p>
 
@@ -43,5 +39,3 @@
         </div>
     </div>
 </div>
-</body>
-</html>

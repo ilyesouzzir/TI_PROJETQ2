@@ -1,6 +1,23 @@
-<h2>Gestion des Maisons</h2>
+<?php
+// Récupérer la partie de l'URL contenant "page="
+$page_part = $_GET['page'];
+
+// Diviser la partie de l'URL en fonction du signe égal
+$page_parts = explode('=', $page_part);
+
+// Récupérer le deuxième élément du tableau résultant
+$file_with_extension = end($page_parts);
+
+// Afficher le nom du fichier avec son extension
+echo $file_with_extension;
+?>
+
+
+
+    <h2>Gestion des Maisons</h2>
 <a href="index_.php?page=ajout_maison.php">Nouvelle Maison</a><br>
 <link rel="stylesheet" href="./public/css/custom.css">
+
 <?php
 //récupération des clients et affichage dans table bootstrap
 $maison = new MaisonDB($cnx);
@@ -37,6 +54,7 @@ else{
                 <td contenteditable="true" id="<?= $liste[$i]->id_maison;?>" name="adresse"><?= $liste[$i]->adresse;?></td>
                 <td contenteditable="true" id="<?= $liste[$i]->id_maison;?>" name="ville"><?= $liste[$i]->ville;?></td>
                 <td><img src="image/<?= $liste[$i]->image_maison; ?>" alt="Image de la maison"><td>
+
                 <td> <a href="index_.php?page=modifier_maison.php&id=<?= $liste[$i]->id_maison;?>"><img src="image/crayon.jpg" alt="Modifier" ></a></td>
                 <td><a href="index_.php?page=delete_maison.php&id=<?= $liste[$i]->id_maison;?>"><img src="image/delete.jpg" alt="Effacer" ></a></td>
             </tr>
