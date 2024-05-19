@@ -14,30 +14,8 @@ $(document).ready(function () {
         let cp = $('#cp').val();
         let id_agent = $('#id_agent').val();
         let image = $('#image').val();
-        // Récupérer l'URL actuelle
-        let url = window.location.href;
-
-// Extraire la partie de l'URL après le signe "?"
-        let queryString = url.split('?')[1];
-
-// Diviser la chaîne de requête en paires clé-valeur
-        let queryParams = queryString.split('&');
-
-// Initialiser la variable qui stockera le nom du fichier
-        let fileName = '';
-
-// Parcourir les paramètres de la requête pour trouver celui contenant "page="
-        for (let i = 0; i < queryParams.length; i++) {
-            let parametre = queryParams[i].split('=');
-            if (parametre[0] === 'page') {
-                fileName = parametre[1];
-                break;
-            }
-        }
-
-// Afficher le nom du fichier avec son extension
-        console.log(fileName);
-        alert(fileName);
+        let fichier_image = image.split('\\').pop();
+        image="/image/"+fichier_image;
         let param = 'titre_maison=' + titre_maison + '&type=' + type + '&surface=' + surface + '&prix=' + prix + '&annee_construction=' + annee_construction + '&adresse=' + adresse + '&ville=' + ville + '&cp=' + cp + '&id_agent=' + id_agent + '&image=' + image;
         $.ajax({
             url: './src/php/ajax/ajaxAjoutMaison.php',
