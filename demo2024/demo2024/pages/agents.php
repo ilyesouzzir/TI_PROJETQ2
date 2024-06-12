@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Agents</title>
-    <link rel="stylesheet" href="/admin/public/css/style.css">
-</head>
-<body>
+
 <?php
 // Assuming $agentImmobilierDB is an instance of AgentImmobilierDB class
 $agentImmobilierDB = new AgentImmobilierDB($cnx);
@@ -61,6 +53,3 @@ if (!empty($listeAgents)) {
     echo "<p>Aucun agent immobilier trouvé.</p>";
 }
 ?>
-<div class="text-center mt-5"></div>
-</body>
-</html>

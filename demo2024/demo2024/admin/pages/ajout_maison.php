@@ -1,5 +1,5 @@
 <h2>Gestion des maisons</h2>
-<link rel="stylesheet" href="./public/css/custom.css">
+
 <div class="container">
     <form id="form_ajout" method="get" action="" enctype="multipart/form-data">
         <div class="mb-3">

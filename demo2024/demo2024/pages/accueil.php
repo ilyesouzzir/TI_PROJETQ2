@@ -7,15 +7,7 @@ $listeMaisons = is_array($listeMaisons) ? $listeMaisons : [];
 
 $nbrMaisons = count($listeMaisons);
 ?>
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liste des Maisons</title>
-    <link rel="stylesheet" href="admin/public/css/style.css">
-</head>
-<body>
+
 <div class="album py-5 bg-body-tertiary">
     <div class="container">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
@@ -41,5 +33,3 @@ $nbrMaisons = count($listeMaisons);
 <div class="text-center mt-5">
     <a href="./index_.php?page=description.php" class="btn btn-primary">Descriptions des Maisons</a>
 </div>
-</body>
-</html>

@@ -16,7 +16,7 @@ echo $file_with_extension;
 
     <h2>Gestion des Maisons</h2>
 <a href="index_.php?page=ajout_maison.php">Nouvelle Maison</a><br>
-<link rel="stylesheet" href="./public/css/custom.css">
+
 
 <?php
 //récupération des clients et affichage dans table bootstrap

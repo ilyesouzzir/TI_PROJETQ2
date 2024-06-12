@@ -8,7 +8,6 @@ if (isset($_GET['id'])) {
 ?>
 
 <h2>Suppression de maison</h2>
-<link rel="stylesheet" href="./public/css/custom.css">
 <div class="container">
     <form id="form_deletion" method="get" action="./src/php/ajax/AjaxDeleteMaison.php">
         <input type="hidden" name="id_maison" value="<?= $maison[0]->id_maison;?>" id="id_maison">

@@ -11,7 +11,6 @@ if (isset($_GET['id'])) {
 ?>
 
 <h2>Modification des maisons</h2>
-<link rel="stylesheet" href="./public/css/custom.css">
 <div class="container">
     <form id="form_modification" method="get">
         <input type="hidden" name="id_maison">

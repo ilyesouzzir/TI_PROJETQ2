@@ -1,5 +1,4 @@
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script><!-- Inclusion de jQuery -->
-<script src="admin/public/js/fonction_jquery2.js"></script>
+
 
 <p></p>
 
